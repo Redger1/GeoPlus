@@ -42,10 +42,17 @@
 	}
 }
 @media (max-width: 1030px) {
+	section { width: 90% }
+	.start_page h1 { font-size: 82px; }
 	.number__type h1 { font-size: 112px; }
 	.number__type h2 { margin-top: 20px; }
 	#contacts { min-height: 700px; }
 	#contacts__bg { min-height: inherit; }
+	.choise_selection { width: 25vw; height: 20vh;}
+	.services { min-width: 33%; }
+	.start_page__button button { font-size: 16px; }
+
+	#contacst__break { display: block; }
 }
 @media (max-width: 920px) {
 

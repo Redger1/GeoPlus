@@ -542,6 +542,7 @@ footer h5 {
 	}
 }
 @media (max-width: 1030px) {
+	section { margin: 0 40px; }
 	.number__type h1 { font-size: 112px; }
 	.number__type h2 { margin-top: 20px; }
 	#contacts { min-height: 700px; }
