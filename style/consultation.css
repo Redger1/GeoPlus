@@ -1,0 +1,56 @@
+/* Consultation */
+#consultation { background: #F2FAF5; }
+#consultation section { padding-top: 0; }
+#consultation h2 {
+	font: 32px 'Neue Machina';
+}
+#consultation button {
+	margin-top: 40px;
+	border: none;
+	background: #32533D;
+	font: 18px 'Neue Machina';
+	color: white;
+	width: 255px;
+	height: 50px;
+}
+#consultation button:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+#services_amount {
+	font: 32px 'Neue Machina';
+	margin-right: 18px;
+}
+.choise_selection {
+	height: 18.5vh;
+	width: 17.7vw;
+	border: 3px solid #32533D;
+	position: relative;
+	word-wrap: anywhere;
+}
+.choise_selection h3 {
+	font: bold 18px 'Neue Machina';
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	margin: 0;
+	padding-right: 5px;
+}
+.topLeft_corner {
+	display: none;
+	position: absolute;
+	top: -3px;
+	right: -3px;
+}
+.choise_selection:hover .topLeft_corner { display: block; }
+.choise_selection:hover {
+	background: #32533D;
+	color: white;
+	cursor: pointer;
+}
+.consultation__services {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+/* ____________ */
