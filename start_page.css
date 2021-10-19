@@ -1,0 +1,83 @@
+/* Start page */
+.start_page {
+	background-image: url(../assets/header_house.png);
+	background-repeat: no-repeat;
+	height: 80vh;
+	width: 100vw;
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-height: 960px;
+}
+.start_page h1 {
+	font: bold 140px 'Neue Machina';
+	color: #fff;
+	z-index: 4;
+	position: relative;
+}
+
+.start_page__right_img img {
+	width: 50%;
+	height: 80vh;
+	position: absolute;
+	right: 0;
+	top: 0;
+	max-height: 960px;
+}
+.start_page__button {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 50%;
+	height: 10%;
+}
+.start_page__button button {
+	background: #fff;
+	border: none;
+	width: 100%;
+	height: 100%;
+	font: 24px 'Neue Machina';
+}
+.start_page__button button:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+#underTrace { z-index: 1; }
+#trace { z-index: 2;}
+
+
+#horizon {
+	z-index: 3; 
+	/*width: 30%;
+	height: 50vh;*/
+
+	width: auto;
+	height: 100%;
+	margin: auto;
+	left: 0;
+}
+.horizon_img_and_label {
+	position: absolute;
+	width: 50%;
+	height: 50%;
+
+	margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+img#horizon + label {
+	z-index: 3;
+	color: white;
+	font: 25px 'TT Norms Pro Regular';
+	bottom: -7%;
+
+	position: absolute;
+	margin: auto;
+	right: 0;
+	left: 0;
+	width: 50%;
+	text-align: right;
+}
