@@ -1,0 +1,40 @@
+/* Footer */
+footer {
+	background: #142114;
+	color: white;
+}
+footer section { padding-bottom: 20px; padding-top: 70px;}
+footer h5 {
+	margin-top: 60px;
+}
+.footer_logo {
+	display: flex;
+	flex-direction: column;
+}
+.footer_logo button {
+	border: none;
+	background: #fff;
+	color: #142114;
+	font: 16px 'Neue Machina';
+	width: 161px;
+	height: 41px;
+	margin-top: 0;
+}
+.footer_logo button:hover { opacity: 0.8; cursor: pointer; }
+.footer_logo img {
+	margin-bottom: 30px;
+}
+.footer_colls {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+.footer_main {
+	display: flex;
+	flex-flow: column;
+	gap: 16px;
+}
+.footer_main a { color: white; }
+.footer_main a:hover { text-decoration: underline; }
+
+/* ______ */

@@ -1,0 +1,659 @@
+@import url(../fonts/tt-norms-pro-cufonfonts-webfont/style.css);
+@import url(../fonts/Neue-Machina/stylesheet.css);
+
+* { font-family: 'TT Norms Pro Regular'; }
+a {
+	text-decoration: none;
+	color: #000;
+}
+#geoplus { font-weight: bold; }
+body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+h1 { margin: 0; }
+ul { list-style: none; }
+hr { margin: 0; }
+section > h1 {	font: bold 54px 'Neue Machina'; }
+/* Header */
+header {
+	display: grid;
+	grid-template-columns: 1fr 5fr 2fr;
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+}
+.header__logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+.header__logo img {
+	height: 48px;
+	width: 158px;
+}
+.header__logo * { color: #fff; }
+.header__navbar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #fff;
+}
+.header__navbar * { color: #fff }
+.menu-list { display: flex; }
+.menu-list li { margin-right: 50px; }
+.menu-link:hover { text-decoration: underline; }
+
+.header__contact {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #fff;
+}
+.header__contact * { color: #fff }
+button#order_call {
+	height: 60%;
+	width: 40%;
+	background: #fff;
+	border: none;
+	color: #32533D;
+	font: bold 15px 'Neue Machina';
+}
+button#order_call:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+/* ______ */
+
+/* Burger Menu */
+.menu__icon { display: none; }
+/* ___________ */
+
+/* Start page */
+.start_page {
+	background-image: url(../assets/header_house.png);
+	background-repeat: no-repeat;
+	height: 80vh;
+	width: 100vw;
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-height: 960px;
+}
+.start_page h1 {
+	font: bold 140px 'Neue Machina';
+	color: #fff;
+	z-index: 4;
+	position: relative;
+}
+
+.start_page__right_img img {
+	width: 50%;
+	height: 80vh;
+	position: absolute;
+	right: 0;
+	top: 0;
+	max-height: 960px;
+}
+.start_page__button {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 50%;
+	height: 10%;
+}
+.start_page__button button {
+	background: #fff;
+	border: none;
+	width: 100%;
+	height: 100%;
+	font: 24px 'Neue Machina';
+}
+.start_page__button button:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+#underTrace { z-index: 1; }
+#trace { z-index: 2;}
+
+
+#horizon {
+	z-index: 3; 
+	/*width: 30%;
+	height: 50vh;*/
+
+	width: auto;
+	height: 100%;
+	margin: auto;
+	left: 0;
+}
+.horizon_img_and_label {
+	position: absolute;
+	width: 50%;
+	height: 50%;
+
+	margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+img#horizon + label {
+	z-index: 3;
+	color: white;
+	font: 25px 'TT Norms Pro Regular';
+	bottom: -7%;
+
+	position: absolute;
+	margin: auto;
+	right: 0;
+	left: 0;
+	width: 50%;
+	text-align: right;
+}
+
+
+/* Services */
+section {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	width: 80%;
+	margin: auto;
+}
+#services {
+	background-color: #F2FAF5;
+}
+.services {
+	min-width: 29%;
+	height: 23%;
+/*	max-height: 415px;*/
+	margin-top: 50px;
+}
+.certain_service {
+	display: flex;
+	gap: 30px;
+	overflow-x: auto;
+	min-height: max-content;
+	padding-bottom: 50px;
+}
+#services__third-header {
+	font-size: 25px;
+}
+.services h3 { font: 24px 'Neue Machina' }
+.services h2 { font: bold 30px 'Neue Machina'; }
+.services p {
+	font: 18px 'TT Norms Pro Regular';
+	margin: 0 0 40px 0;
+}
+.services button {
+	width: 50%;
+	height: 40px;
+	border: none;
+	background-color: #32533D;
+	color: #fff;
+	font-family: 'Neue Machina';
+	font-size: 18px;
+}
+.services button:hover { opacity: 0.8; cursor: pointer; }
+
+/* Introduction */
+#introduction { background: #32533D; color: #F2FAF5;}
+#introduction h3 {
+	font: 32px 'TT Norms Pro Regular';
+}
+#introduction button {
+	border: none;
+	background: #fff;
+	width: 15%;
+	height: 40px;
+	font: 18px 'Neue Machina';
+}
+#introduction button:hover { opacity: 0.8; cursor: pointer;}
+hr {
+	margin-top: 80px;
+	margin-bottom: 60px;
+}
+.introduction__numbers {
+	display: flex;
+	justify-content: space-around;
+}
+.number__type h1 {
+	font: 120px 'TT Norms Pro Regular';
+	text-align: center;
+	color: #32533D;
+
+	text-shadow: 
+		-0   -2px 1px #83998B,
+		 0   -2px 1px #83998B,
+		-0    2px 1px #83998B,
+		 0    2px 1px #83998B,
+		-2px -0   1px #83998B,
+		 2px -0   1px #83998B,
+		-2px  0   1px #83998B,
+		 2px  0   1px #83998B,
+		-1px -2px 1px #83998B,
+		 1px -2px 1px #83998B,
+		-1px  2px 1px #83998B,
+		 1px  2px 1px #83998B,
+		-2px -1px 1px #83998B,
+		 2px -1px 1px #83998B,
+		-2px  1px 1px #83998B,
+		 2px  1px 1px #83998B,
+		-2px -2px 1px #83998B,
+		 2px -2px 1px #83998B,
+		-2px  2px 1px #83998B,
+		 2px  2px 1px #83998B,
+		-2px -2px 1px #83998B,
+		 2px -2px 1px #83998B,
+		-2px  2px 1px #83998B,
+		 2px  2px 1px #83998B;
+}
+.number__type h2 {
+	font: 48px 'Neue Machina';
+	text-align: center;
+	color: #83998B;
+	margin-bottom: 0;
+}
+/* ____________ */
+
+/* News */
+#news { background: #F2FAF5; }
+#news__header { margin-bottom: 40px; }
+.news__grid {
+	display: grid;
+	grid-template-rows: 220px 220px;
+	grid-template-columns: 5fr 2fr;
+	color: white;
+	gap: 30px;
+}
+.main_news {
+	grid-row: 1/3;
+	background: url(../assets/news_bg.png) center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+
+	transition: background-size .2 linear;
+	-moz-transition: background-size .2s linear;
+}
+.main_news:hover {
+	background-size: 102% 102%;
+	cursor: pointer;
+}
+
+.main_news__text {
+	position: absolute;
+	bottom: 0;
+	margin-left: 25px;
+	margin-bottom: 25px;
+}
+.main_news__text h5 {
+	font: 18px 'TT Norms Pro Regular';
+}
+.main_news__text h1 {
+	font: 32px 'Neue Machina';
+	text-transform: uppercase;
+}
+.main_news__text p {
+	font: 16px 'TT Norms Pro Regular';
+	margin-bottom: 0;
+}
+
+.smaller_news {
+	background: url(../assets/smaller_news.png) center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+
+	transition: background-size .2s ease-in;
+	-moz-transition: background-size .2s linear;
+}
+.smaller_news:hover {
+	background-size: 102% 102%;
+	cursor: pointer;
+}
+
+.smaller_news h1 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-left: 16px;
+	margin-right: 25px;
+	margin-bottom: 12px;
+	font: 20px 'Neue Machina';
+}
+
+.news__subscribtion { color: #000; }
+.news__subscribtion h1 {
+	font: bold 24px 'Neue Machina';
+}
+.news__subscribtion p {
+	font: 16px 'TT Norms Pro Regular';
+	margin-top: 10px;
+}
+.news__subscribtion input {
+	border: 2px solid #32533D;
+	border-radius: none;
+	font: 16px 'TT Norms Pro Regular';
+	padding: 10px;
+	width: 92%;
+	margin-bottom: 10px;
+	margin-top: 26px;
+	outline: none;
+}
+.news__subscribtion button {
+	width: 100%;
+	height: 20%;
+	background: #32533D;
+	border: none;
+	color: #fff;
+	font: 16px 'Neue Machina';
+}
+.news__subscribtion button:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+/* ____ */
+
+/* Consultation */
+#consultation { background: #F2FAF5; }
+#consultation section { padding-top: 0; }
+#consultation h2 {
+	font: 32px 'Neue Machina';
+}
+#consultation button {
+	margin-top: 40px;
+	border: none;
+	background: #32533D;
+	font: 18px 'Neue Machina';
+	color: white;
+	width: 255px;
+	height: 50px;
+}
+#consultation button:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+#services_amount {
+	font: 32px 'Neue Machina';
+	margin-right: 18px;
+}
+.choise_selection {
+	height: 18.5vh;
+	width: 17.7vw;
+	border: 3px solid #32533D;
+	position: relative;
+	word-wrap: anywhere;
+}
+.choise_selection h3 {
+	font: bold 18px 'Neue Machina';
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	margin: 0;
+	padding-right: 5px;
+}
+.topLeft_corner {
+	display: none;
+	position: absolute;
+	top: -3px;
+	right: -3px;
+}
+.choise_selection:hover .topLeft_corner { display: block; }
+.choise_selection:hover {
+	background: #32533D;
+	color: white;
+	cursor: pointer;
+}
+.consultation__services {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+/* ____________ */
+
+/* Contacts */
+#contacts { 
+	background: url(../assets/contacs_bg.jpg); 
+	color: white;
+	position: relative;
+	height: 75vh;
+}
+#contacts h1 { font-size: 32px; }
+#contacts p {
+	font: 32px 'TT Norms Pro Regular';
+	margin-top: 50px;
+	margin-bottom: 19px;
+}
+#contacts h2 {
+	font: bold 54px 'Neue Machina';
+	margin: 0;
+}
+#contacts h3 {
+	font: 32px 'Neue Machina';
+	margin: 0;
+}
+#contacts section {
+	z-index: 2;
+	position: relative;
+}
+#contacts__bg {
+	height: inherit;
+	width: 970px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(50, 83, 61, 0.8);
+	z-index: 1;
+}
+#map_pin {
+	position: absolute;
+	top: 33%;
+	right: 11.4%;
+}
+/* ________ */
+
+/* Footer */
+footer {
+	background: #142114;
+	color: white;
+}
+footer section { padding-bottom: 20px; padding-top: 70px;}
+footer h5 {
+	margin-top: 60px;
+}
+.footer_logo {
+	display: flex;
+	flex-direction: column;
+}
+.footer_logo button {
+	border: none;
+	background: #fff;
+	color: #142114;
+	font: 16px 'Neue Machina';
+	width: 161px;
+	height: 41px;
+	margin-top: 0;
+}
+.footer_logo button:hover { opacity: 0.8; cursor: pointer; }
+.footer_logo img {
+	margin-bottom: 30px;
+}
+.footer_colls {
+	display: flex;
+	justify-content: space-between;
+}
+.footer_main {
+	display: flex;
+	flex-flow: column;
+	gap: 16px;
+}
+.footer_main a { color: white; }
+.footer_main a:hover { text-decoration: underline; }
+/* ______ */
+
+
+/* Adaptive */
+@media (max-width: 1300px) {
+	.header__logo { border-right: none; }
+	.header__contact { border-left: none; }
+	.start_page h1 { font-size: 112px; }
+	.header__navbar ul li { margin-right: 30px; }
+	.horizon_img_and_label { height: 60%; }
+	img#horizon + label { width: 55%; font-size: 21px; bottom: -8%; }
+	section {
+		width: 960px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	hr { margin-top: 60px; margin-bottom: 0; }
+	section > h1 { font-size: 44px; }
+	#introduction h3 { font-size: 30px; }
+	#introduction button { width: 20%; }
+	#introduction__hr { color: #83998B; margin-bottom: 41px;  }
+
+	.news__subscribtion h1 { font-size: 20px; }
+	.news__grid { grid-template-rows: 140px 230px; }
+	.news__subscribtion input { margin-top: 15px; }
+	.news__subscribtion p { margin: 46px 0 0 0; }
+	#services_amount { font-size: 30px; }
+	.consultation__services { gap: ; }
+	.choise_selection { width: 20vw; }
+	#consultation button { width: 20.5vw; }
+
+	#contacts { height: 65vh; background-size: contain; }
+	#map_pin { top: 22%; }
+	#contacts p { font-size: 22px; }
+	#contacts h2 { font-size: 44px; }
+	#contacts h3 { font-size: 30px;}
+	#contacts__bg { width: 65%; height: 65vh; }
+
+	footer h5 { font-size: 12px; }
+	.footer_main h1, .footer_contacts h1, .footer_offices h1 { 
+		font-size: 32px; 
+	}
+	.footer_main a, .footer_contacts a, .footer_offices a {
+		font-size: 20px;
+	}
+}
+@media (max-width: 1030px) {
+	section { margin: 0 40px; }
+	.number__type h1 { font-size: 112px; }
+	.number__type h2 { margin-top: 20px; }
+	#contacts { min-height: 700px; }
+	#contacts__bg { min-height: inherit; }
+}
+@media (max-width: 920px) {
+
+}
+@media (max-width: 767px) {
+	#order_call { display: none; }
+	.menu__icon {
+		z-index: 5;
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+
+		margin-right: 30px;
+		margin-left: 50px;
+	}
+	.menu__icon span,
+	.menu__icon::before,
+	.menu__icon::after {
+		left: 0;
+		position: absolute;
+		width: 100%;
+		height: 10%;
+		transition: all 0.3 ease 0s;
+		background-color: #fff;
+	}
+	.menu__icon::before,
+	.menu__icon::after {
+		content: "";
+	}
+	.menu__icon::before {
+		top: 0;
+	}
+	.menu__icon::after {
+		bottom: 0;
+		transform: scale(1);
+	}
+	.menu__icon span {
+		top: 50%;
+		transform: scale(1) translate(0px, -50%);
+	}
+
+	/* Header */
+	header {
+		display: flex;
+		justify-content: space-between;
+	}
+	#phone_number { font-size: 16px; font-weight: bold;}
+	#phone_number:before {
+		content: url(../assets/phone.svg);
+		margin-right: 10px;
+	}
+	.header__navbar { display: none; }
+	.header__logo, .header__contact { border: none; }
+	/* ______ */
+	section { width: auto; margin: 0 40px; }
+	section > h1 { font-size: 34px; }
+
+	.start_page h1 { font-size: 88px; }
+	img#horizon + label { font-size: 15px; width: 66%;}
+	.start_page__button button { font-size: 20px; }
+
+	/* Services */
+	.services { min-width: 40%; height: 100%; }
+	/* _______ */
+	
+	#introduction h3 { font-size: 24px; }
+	#introduction button { width: 30%; }
+
+	.number__type h1 { font-size: 82px; }
+	.number__type h2 { font-size: 36px; }
+
+	.news__grid { grid-template-columns: none; }
+	.smaller_news { display: none; }
+	.news__subscribtion h1 { font-size: 32px; }
+	.news__subscribtion p { font-size: 24px; margin: 16px 0 16px 0;}
+
+	.input_promo { display: flex; }
+	.input_promo input { margin: 0; }
+	.news__subscribtion input { width: auto; }
+	.news__subscribtion button {
+		width: auto;
+		height: auto;
+		padding: 0 20px 0 20px;
+	}
+
+	#consultation h2 { font-size: 24px; }
+	#services_amount { font-size: 24px; }
+	.choise_selection, #consultation button { width: 25vw; }
+
+	#contacts__bg { display: none; }
+	#contacts { background: #32533D;; }
+	#map_pin { display: none; }
+
+	.footer_colls {
+		display: grid;
+		grid-template-rows: auto auto;
+		grid-template-columns: 33% 33% 33%;
+	}
+	.footer_logo {
+		grid-column: 1/4;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+	.footer_logo img { height: 80px; }
+}
+/* ________ */

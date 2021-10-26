@@ -1,0 +1,52 @@
+/* Header */
+header {
+	display: grid;
+	grid-template-columns: 1fr 5fr 2fr;
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+}
+.header__logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+.header__logo img {
+	height: 48px;
+	width: 158px;
+}
+.header__logo * { color: #fff; }
+.header__navbar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #fff;
+}
+.header__navbar * { color: #fff }
+.menu-list { display: flex; }
+.menu-list li { margin-right: 50px; }
+.menu-link:hover { text-decoration: underline; }
+
+.header__contact {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #fff;
+}
+.header__contact * { color: #fff }
+button#order_call {
+	height: 60%;
+	width: 40%;
+	background: #fff;
+	border: none;
+	color: #32533D;
+	font: bold 15px 'Neue Machina';
+}
+button#order_call:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+/* ______ */

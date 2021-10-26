@@ -1,0 +1,233 @@
+/* Adaptive */
+@media (max-width: 1921px) {
+	img#horizon + label { width: 35%; }
+	.news__all-news a { font-size: 30px; }
+}
+@media (max-width: 1300px) {
+	.header__logo { border-right: none; }
+	.header__contact { border-left: none; }
+	.start_page h1 { font-size: 112px; }
+	.header__navbar ul li { margin-right: 30px; }
+	.horizon_img_and_label { height: 60%; }
+	img#horizon + label { width: 55%; font-size: 21px; bottom: -8%; }
+	section {
+		width: 960px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	hr { margin-top: 60px; margin-bottom: 0; }
+	section > h1 { font-size: 44px; }
+	.news__all-news h1 { font-size: 44px; }
+	.news__all-news a { font-size: 22px; }
+
+	#introduction h3 { font-size: 30px; }
+	#introduction button { width: 20%; }
+	#introduction__hr { color: #83998B; margin-bottom: 41px;  }
+
+	.news__subscribtion h1 { font-size: 20px; }
+	.news__grid { grid-template-rows: 140px 230px; }
+	.news__subscribtion input { margin-top: 15px; height: 35px; }
+	.news__subscribtion p { margin: 45px 0 0 0; }
+	#services_amount { font-size: 30px; }
+	.consultation__services { gap: ; }
+	.choise_selection { width: 20vw; }
+	#consultation button { width: 20.5vw; }
+
+	#contacts { height: 65vh; background-size: contain; }
+	#map_pin { top: 22%; }
+	#contacts p { font-size: 22px; }
+	#contacts h2 { font-size: 44px; }
+	#contacts h3 { font-size: 30px;}
+	#contacts__bg { width: 65%; height: 65vh; }
+
+	footer h5 { font-size: 12px; }
+	.footer_main h1, .footer_contacts h1, .footer_offices h1 { 
+		font-size: 32px; 
+	}
+	.footer_main a, .footer_contacts a, .footer_offices a {
+		font-size: 20px;
+	}
+
+}
+@media (max-width: 1030px) {
+	section { width: 90% }
+	.start_page h1 { font-size: 82px; }
+	.number__type h1 { font-size: 112px; }
+	.number__type h2 { margin-top: 20px; }
+	#contacts { min-height: 700px; }
+	#contacts__bg { min-height: inherit; }
+	.choise_selection { width: 25vw; height: 20vh;}
+	.services { min-width: 33%; }
+	.start_page__button button { font-size: 16px; }
+
+	#contacst__break { display: block; }
+	.news__all-news a { font-size: 20px; }
+}
+@media (max-width: 920px) {
+	.news__subscribtion p { margin-top: 10px; }
+}
+@media (max-width: 767px) {
+	#order_call { display: none; }
+	.menu__icon {
+		z-index: 5;
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+
+		margin-right: 30px;
+		margin-left: 50px;
+	}
+	.menu__icon span,
+	.menu__icon::before,
+	.menu__icon::after {
+		left: 0;
+		position: absolute;
+		width: 100%;
+		height: 10%;
+		transition: all 0.3 ease 0s;
+		background-color: #fff;
+	}
+	.menu__icon::before,
+	.menu__icon::after {
+		content: "";
+	}
+	.menu__icon::before {
+		top: 0;
+	}
+	.menu__icon::after {
+		bottom: 0;
+		transform: scale(1);
+	}
+	.menu__icon span {
+		top: 50%;
+		transform: scale(1) translate(0px, -50%);
+	}
+
+	/* Header */
+	header {
+		display: flex;
+		justify-content: space-between;
+	}
+	#phone_number { font-size: 16px; font-weight: bold;}
+	#phone_number:before {
+		content: url(../assets/phone.svg);
+		margin-right: 10px;
+	}
+	.header__navbar { display: none; }
+	.header__logo, .header__contact { border: none; }
+	/* ______ */
+	section { width: auto; margin: 0 40px; }
+	section > h1 { font-size: 34px; }
+	.news__all-news h1 { font-size: 34px; }
+
+	.start_page h1 { font-size: 88px; }
+	img#horizon + label { font-size: 15px; width: 66%;}
+	.start_page__button button { font-size: 20px; }
+
+	/* Services */
+	.services { min-width: 40%; height: 100%; }
+	/* _______ */
+	
+	#introduction h3 { font-size: 24px; }
+	#introduction button { width: 30%; }
+
+	.number__type h1 { font-size: 82px; }
+	.number__type h2 { font-size: 36px; }
+
+	.news__grid { grid-template-columns: none; }
+	.smaller_news { display: none; }
+	.news__subscribtion h1 { font-size: 32px; }
+	.news__subscribtion p { font-size: 24px; margin: 16px 0 16px 0;}
+
+	.input_promo { display: flex; }
+	.input_promo input { margin: 0; }
+	.news__subscribtion input { width: auto; }
+	.news__subscribtion button {
+		width: auto;
+		height: auto;
+		padding: 0 20px 0 20px;
+		position: relative;
+	}
+
+	#consultation h2 { font-size: 24px; }
+	#services_amount { font-size: 24px; }
+	.choise_selection, #consultation button { width: 25vw; }
+
+	#contacts__bg { display: none; }
+	#contacts { background: #32533D;; }
+	#map_pin { display: none; }
+
+	.footer_colls {
+		display: grid;
+		grid-template-rows: auto auto;
+		grid-template-columns: 30% 30% 30%;
+	}
+	.footer_logo {
+		grid-column: 1/4;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+	.footer_logo img { height: 80px; }
+}
+
+@media (max-width: 600px) {
+	.start_page h1 { font-size: 68px; }
+	#horizon { height: 90%; }
+	img#horizon + label { bottom: 3%; }
+	.start_page__button button { font-size: 18px; }
+	section > h1 { font-size: 24px; }
+	.news__all-news h1 { font-size: 24px; }
+	.news__all-news a { font-size: 18px; }
+
+	section { padding-top: 40px; padding-bottom: 40px; }
+	hr { margin-top: 40px; }
+	.services { margin-top: 20px; min-width: 50%; }
+	.services h3 { font-size: 20px; }
+	.services h2 { font-size: 24px; }
+	.services p { font-size: 16px; }
+	.services button { font-size: 16px; height: 35px; }
+	.certain_service { padding-bottom: 0; }
+	#introduction h3 { font-size: 18px; }
+	#introduction button { font-size: 16px; height: 35px; }
+	.number__type h1 { font-size: 60px; }
+	.number__type h2 { font-size: 28px; }
+	#introduction__hr { margin-bottom: 30px; }
+
+	.main_news__text h5 { margin-bottom: 20px; font-size: 16px; }
+	.main_news__text h1 { font-size: 28px; }
+	.main_news__text { margin-left: 15px; margin-bottom: 15px; }
+
+	.news__subscribtion h1 { font-size: 24px; }
+	.news__subscribtion p {
+		font-size: 18px;
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+	#consultation section { padding-top: 20px; }
+	#services_amount { font-size: 18px; }
+	#consultation h2 { font-size: 18px; margin-bottom: 50px; }
+	.choise_selection { min-width: 30vw; height: 26vh; }
+
+	.consultation__services {
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		padding-bottom: 20px;
+	}
+	.choise_selection h3 { left: 8px; bottom: 8px; }
+	#consultation button {
+		font-size: 16px;
+		font-weight: bold;
+		height: 35px;
+	}
+
+	#contacts { min-height: 550px; }
+	#contacts h1 { font-size: 24px; font-weight: normal; }
+	#contacts p { margin-top: 40px; font-size: 18px; font-weight: bold; }
+	#contacts h2 { font-size: 36px; }
+	#contacts section h2 br { display: none; }
+}
+/* ________ */

@@ -1,0 +1,86 @@
+/* Start page */
+.start_page {
+	background-image: url(../assets/header_house.png);
+	background-repeat: no-repeat;
+	height: 80vh;
+	width: 100vw;
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-height: 960px;
+
+	overflow: hidden;
+}
+.start_page__button {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 50%;
+	height: 10%;
+}
+.start_page__button button {
+	background: #fff;
+	border: none;
+	width: 100%;
+	height: 100%;
+	font: 24px 'Neue Machina';
+}
+.start_page__button button:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+#horizon {
+	z-index: 3; 
+	/*width: 30%;
+	height: 50vh;*/
+
+	width: auto;
+	height: 100%;
+
+	/*width: 360px;
+	height: 470px;*/
+	margin: auto;
+	left: 0;
+}
+img#horizon + label {
+	z-index: 3;
+	color: white;
+	font: 25px 'TT Norms Pro Regular';
+	bottom: -7%;
+
+	position: absolute;
+	margin: auto;
+	right: 0;
+	left: 0;
+	width: 100%;
+	text-align: right;
+}
+
+
+.start_page__left-side {
+	width: 50vw;
+	background-image: url(assets/header_house.png);
+	background-repeat: no-repeat;
+}
+.start_page__right-side {
+	width: 50vw;
+	height: 100%;
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.start_page__right-side img#trace {
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+	z-index: 0;
+}
+.right-side_inner {
+	display: flex;
+	position: absolute
+}
