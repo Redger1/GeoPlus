@@ -16,11 +16,11 @@
 		<nav class="header__navbar">
 			
 			<ul class="menu-list">
-				<li><a class="menu-link" href="#">Услуги</a></li>
-				<li><a class="menu-link" href="#">О компании</a></li>
+				<li><a class="menu-link" href="#services">Услуги</a></li>
+				<li><a class="menu-link" href="#introduction">О компании</a></li>
 				<li><a class="menu-link" href="#">Лицензии</a></li>
-				<li><a class="menu-link" href="#">Новости</a></li>
-				<li><a class="menu-link" href="#">Контакты</a></li>
+				<li><a class="menu-link" href="#news">Новости</a></li>
+				<li><a class="menu-link" href="#contacts">Контакты</a></li>
 			</ul>
 		</nav>
 		<div class="header__contact">
@@ -45,53 +45,38 @@
 	      <button>Оставить заявку</button>
 	    </div> 
 	</div>
-	<!-- <div class="start_page">
-		<h1>полный спектр<br>геодезических<br>услуг</h1>
-		<div class="start_page__right_img">
-			<div class="horizon_img_and_label">
-				<img id="horizon" src="assets/header_pic.png">
-				<label for="horizon">-Расширяем горизонты</label>
-			</div>
-			<img id="trace" src="assets/header_trace.png">
-			<img id="underTrace" src="assets/header_undertrace.png">
-		</div>
-		<div class="start_page__button">
-			<button>Оставить заявку</button>
-		</div>
-	</div> -->
-
 	<div id="services">
 		<section id="services">
 			<h1>Широкий выбор геодезических услуг силами высококвалифицированных специалистов компании и высокоточного оборудования</h1>
 			<hr>
-			<div class="certain_service">
-				<div class="services">
+			<div class="certain_service slider">
+				<div class="services slider__item">
 					<h3>01.</h3>
 					<h2>Топографическая съемка</h2>
 					<p>Комплекс работ, выполняемых с целью получения съёмочного оригинала топографических карт или планов местности, а также получение топографической информации в другой форме</p>
 					<button>Заказать</button>
 				</div>
 
-				<div class="services">
+				<div class="services slider__item">
 					<h3>02.</h3>
 					<h2>Горизонтальная съемка</h2>
 					<p>Комплекс работ, выполняемых с целью получения съёмочного оригинала топографических карт или планов местности, а также получение топографической информации в другой форме</p>
 					<button>Заказать</button>
 				</div>
 
-				<div class="services">
+				<div class="services slider__item">
 					<h3>03.</h3>
 					<h2 id="services__third-header">Схема расположения участка на кадастровом плане</h2>
 					<p>Комплекс работ, выполняемых с целью получения съёмочного оригинала топографических карт или планов местности</p>
 					<button>Заказать</button>
 				</div>
-				<div class="services">
+				<div class="services slider__item">
 					<h3>04.</h3>
 					<h2>Горизонтальная съемка</h2>
 					<p>Комплекс работ, выполняемых с целью получения съёмочного оригинала, а также получение топографической информации в другой форме</p>
 					<button>Заказать</button>
 				</div>
-				<div class="services">
+				<div class="services slider__item">
 					<h3>01.</h3>
 					<h2>Топографическая съемка</h2>
 					<p>Комплекс работ, выполняемых с целью получения съёмочного оригинала топографических карт или планов местности, а также получение топографической информации в другой форме</p>
@@ -276,6 +261,8 @@
 			<h5>©2007—2021 ООО "РЕГИОНАЛЬНОЕ БЮРО КАДАСТРОВЫХ ИНЖЕНЕРОВ ГЕО ПЛЮС"</h5>
 		</section>
 	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

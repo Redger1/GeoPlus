@@ -82,5 +82,6 @@ img#horizon + label {
 }
 .right-side_inner {
 	display: flex;
-	position: absolute
+	position: absolute;
+	height: 55%;
 }

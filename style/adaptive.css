@@ -29,11 +29,12 @@
 	.news__subscribtion input { margin-top: 15px; height: 35px; }
 	.news__subscribtion p { margin: 45px 0 0 0; }
 	#services_amount { font-size: 30px; }
+	.services { margin-top: 50px; }
 	.consultation__services { gap: ; }
 	.choise_selection { width: 20vw; }
 	#consultation button { width: 20.5vw; }
 
-	#contacts { height: 65vh; background-size: contain; }
+	#contacts { background-size: contain; }
 	#map_pin { top: 22%; }
 	#contacts p { font-size: 22px; }
 	#contacts h2 { font-size: 44px; }
@@ -54,7 +55,7 @@
 	.start_page h1 { font-size: 82px; }
 	.number__type h1 { font-size: 112px; }
 	.number__type h2 { margin-top: 20px; }
-	#contacts { min-height: 700px; }
+	/*#contacts { min-height: 700px; }*/
 	#contacts__bg { min-height: inherit; }
 	.choise_selection { width: 25vw; height: 20vh;}
 	.services { min-width: 33%; }
@@ -127,7 +128,7 @@
 	.start_page__button button { font-size: 20px; }
 
 	/* Services */
-	.services { min-width: 40%; height: 100%; }
+	.services { min-width: 40%; min-height: 100%; }
 	/* _______ */
 	
 	#introduction h3 { font-size: 24px; }
@@ -224,7 +225,7 @@
 		height: 35px;
 	}
 
-	#contacts { min-height: 550px; }
+/*	#contacts { min-height: 550px; }*/
 	#contacts h1 { font-size: 24px; font-weight: normal; }
 	#contacts p { margin-top: 40px; font-size: 18px; font-weight: bold; }
 	#contacts h2 { font-size: 36px; }

@@ -9,23 +9,25 @@ section {
 	background-color: #F2FAF5;
 }
 .services {
-	min-width: 29%;
-	height: 23%;
-/*	max-height: 415px;*/
-	margin-top: 50px;
+	/*min-width: 29%;*/
+	min-height: 23%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .certain_service {
 	display: flex;
 	gap: 30px;
-	overflow-x: auto;
+	/*overflow-x: auto;*/
 	min-height: max-content;
 	padding-bottom: 50px;
 }
-#services__third-header {
-	font-size: 25px;
-}
 .services h3 { font: 24px 'Neue Machina' }
-.services h2 { font: bold 30px 'Neue Machina'; }
+.services h2 {
+	font: bold 30px 'Neue Machina';
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+}
 .services p {
 	font: 18px 'TT Norms Pro Regular';
 	margin: 0 0 40px 0;
@@ -38,6 +40,8 @@ section {
 	color: #fff;
 	font-family: 'Neue Machina';
 	font-size: 18px;
+
+	/*margin: auto;*/
 }
 .services button:hover { opacity: 0.8; cursor: pointer; }
 /* ________ */
