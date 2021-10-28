@@ -49,6 +49,10 @@
 		font-size: 20px;
 	}
 
+
+	.start_page {
+		background-position: center;
+	}
 }
 @media (max-width: 1030px) {
 	section { width: 90% }
@@ -66,9 +70,23 @@
 }
 @media (max-width: 920px) {
 	.news__subscribtion p { margin-top: 10px; }
+	.menu-list { padding-left: 0; }
 }
-@media (max-width: 767px) {
-	#order_call { display: none; }
+/* Burger menu */
+@media (max-width: 860px) {
+	section > h1 { font-size: 34px; }
+	header {
+		display: flex;
+		justify-content: space-between;
+	}
+	#phone_number { font-size: 16px; font-weight: bold;}
+	#phone_number:before {
+		content: url(../assets/phone.svg);
+		margin-right: 10px;
+	}
+	.header__logo, .header__contact { border: none; }
+
+		#order_call { display: none; }
 	.menu__icon {
 		z-index: 5;
 		display: block;
@@ -87,7 +105,7 @@
 		position: absolute;
 		width: 100%;
 		height: 10%;
-		transition: all 0.3 ease 0s;
+		transition: all 0.3s ease 0s;
 		background-color: #fff;
 	}
 	.menu__icon::before,
@@ -105,26 +123,56 @@
 		top: 50%;
 		transform: scale(1) translate(0px, -50%);
 	}
+	.menu__icon._active span {
+		transform: scale(0) translate(0px, -50%);
+	}
+	.menu__icon._active:before {
+		top: 50%;
+		transform: rotate(-45deg) translate(0px, -50%);
+	}
+	.menu__icon._active:after {
+		bottom: 50%;
+		transform: rotate(45deg) translate(0px, 50%);
+	}
 
-	/* Header */
-	header {
-		display: flex;
-		justify-content: space-between;
+
+	.header__navbar {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 80vh;
+		background: rgba(0, 0, 0, 0.8);
+		transition: all 0.3s ease 0s;
+		z-index: 5;
+		justify-content: left;
 	}
-	#phone_number { font-size: 16px; font-weight: bold;}
-	#phone_number:before {
-		content: url(../assets/phone.svg);
-		margin-right: 10px;
+	.header__navbar._active {
+		top: 0;
 	}
-	.header__navbar { display: none; }
-	.header__logo, .header__contact { border: none; }
-	/* ______ */
+	.menu-list {
+		flex-direction: column;
+		justify-content: space-around;
+		width: 100%;
+		height: 100%;
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+	.menu-list > li {
+		margin-bottom: 30px;
+	}
+	.menu-list > li:last-child {
+		margin-bottom: 0;
+	}
+}
+/* ___________ */
+
+@media (max-width: 767px) {
 	section { width: auto; margin: 0 40px; }
-	section > h1 { font-size: 34px; }
 	.news__all-news h1 { font-size: 34px; }
 
 	.start_page h1 { font-size: 88px; }
-	img#horizon + label { font-size: 15px; width: 66%;}
+	img#horizon + label { font-size: 16px; width: 66%;}
 	.start_page__button button { font-size: 20px; }
 
 	/* Services */
@@ -232,3 +280,7 @@
 	#contacts section h2 br { display: none; }
 }
 /* ________ */
+
+@media (max-height: 674px) {
+	img#horizon + label { font-size: 17px; }
+}

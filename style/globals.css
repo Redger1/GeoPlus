@@ -1,7 +1,6 @@
 @import url(../fonts/tt-norms-pro-cufonfonts-webfont/style.css);
 @import url(../fonts/Neue-Machina/stylesheet.css);
 
-html { scroll-behavior: smooth; }
 * { font-family: 'TT Norms Pro Regular'; }
 a {
 	text-decoration: none;
@@ -12,6 +11,9 @@ body {
 	margin: 0;
 	padding: 0;
 	position: relative;
+}
+body._lock {
+	overflow: hidden;
 }
 h1 { margin: 0; }
 ul { list-style: none; }

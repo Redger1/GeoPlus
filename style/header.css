@@ -49,4 +49,7 @@ button#order_call:hover {
 	opacity: 0.8;
 	cursor: pointer;
 }
+.right-side_inner._hide {
+	display: none;
+}
 /* ______ */
