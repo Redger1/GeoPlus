@@ -15,6 +15,9 @@ body {
 body._lock {
 	overflow: hidden;
 }
+body.lock {
+	overflow: hidden;
+}
 h1 { margin: 0; }
 ul { list-style: none; }
 hr { margin: 0; }

@@ -6,23 +6,23 @@
 	<link rel="stylesheet" href="style/all.css">
 	<title>Document</title>
 </head>
-<body>
-	<header>
+<body class="wrapper">
+	<header class="lock-padding">
 		<div class="header__logo">
 			<a href="#">
 				<img src="assets/logo.svg">
 			</a>
 		</div>
-		<nav class="header__navbar">
+		<nav class="header__navbar lock-padding">
 			<ul class="menu-list">
 				<li><a data-goto="#services" class="menu-link" href="#">Услуги</a></li>
 				<li><a data-goto="#introduction" class="menu-link" href="#">О компании</a></li>
-				<li><a data-goto="#news" class="menu-link" href="#">Лицензии</a></li>
-				<li><a class="menu-link" href="">Новости</a></li>
+				<li><a class="menu-link" href="#">Лицензии</a></li>
+				<li><a data-goto="#news" class="menu-link" href="">Новости</a></li>
 				<li><a data-goto="#contacts" class="menu-link" href="#">Контакты</a></li>
 			</ul>
 		</nav>
-		<div class="header__contact">
+		<div class="header__contact lock-padding">
 			<h5 id="phone_number">+7 (495) 978-22-03</h5>
 			<button id="order_call">Заказать звонок</button>
 			<div class="menu__icon">
@@ -30,7 +30,6 @@
 			</div>
 		</div>
 	</header>
-
 	<div class="start_page">
 	    <div class="start_page__left-side"></div>
 	    <div class="start_page__right-side">
@@ -41,7 +40,7 @@
 	      	</div>
 	    </div> 
 	    <div class="start_page__button">
-	      <button>Оставить заявку</button>
+	    	<a href="#popup" class="popup-link"><button>Оставить заявку</button></a>
 	    </div> 
 	</div>
 	<div id="services">
@@ -260,6 +259,31 @@
 			<h5>©2007—2021 ООО "РЕГИОНАЛЬНОЕ БЮРО КАДАСТРОВЫХ ИНЖЕНЕРОВ ГЕО ПЛЮС"</h5>
 		</section>
 	</footer>
+	<div class="popup" id="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<a href="#" class="popup__close close-popup">X</a>
+				<div class="popup__title">Оставьте заявку</div>
+				<div class="popup__subtitle">И мы свяжемся с вами в ближайшее время</div>
+				<div class="popup__forms">
+					<form action="input">
+						<input placeholder="Имя" type="text">
+						<input placeholder="Почта" type="text">
+					</form>
+				</div>
+				<div class="delimetr">или</div>
+				<div id="popup__form-phone" class="popup__forms">
+					<form action="input">
+						<input placeholder="Телефон" type="text">
+					</form>
+				</div>
+				<div class="popup__button">
+					<button onclick="popupClose(document.querySelector('.popup.open'))">Оставить заявку</button>
+				</div>
+				<p>Нажимая на кнопку вы даете согласие на обработку персональных данных</p>
+			</div>
+		</div>
+	</div>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/script.js"></script>

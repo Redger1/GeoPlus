@@ -73,6 +73,7 @@ img#horizon + label {
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
+	z-index: 3;
 }
 .start_page__right-side img#trace {
 	height: 100%;

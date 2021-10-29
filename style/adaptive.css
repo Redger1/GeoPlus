@@ -34,6 +34,7 @@
 	.choise_selection { width: 20vw; }
 	#consultation button { width: 20.5vw; }
 
+	#contacts section { padding-bottom: 40px; }
 	#contacts { background-size: contain; }
 	#map_pin { top: 22%; }
 	#contacts p { font-size: 22px; }
@@ -60,7 +61,7 @@
 	.number__type h1 { font-size: 112px; }
 	.number__type h2 { margin-top: 20px; }
 	/*#contacts { min-height: 700px; }*/
-	#contacts__bg { min-height: inherit; }
+	#contacts__bg { min-height: 100%; }
 	.choise_selection { width: 25vw; height: 20vh;}
 	.services { min-width: 33%; }
 	.start_page__button button { font-size: 16px; }
@@ -142,27 +143,34 @@
 		left: 0;
 		width: 100%;
 		height: 80vh;
-		background: rgba(0, 0, 0, 0.8);
 		transition: all 0.3s ease 0s;
 		z-index: 5;
 		justify-content: left;
 	}
 	.header__navbar._active {
 		top: 0;
+		background: #32533D;
+		border-bottom: none;
+		font-family: 'Neue Machina';
+	}
+	.header__navbar._active ul li {
+		padding-bottom: 20px;
 	}
 	.menu-list {
 		flex-direction: column;
 		justify-content: space-around;
 		width: 100%;
-		height: 100%;
-		margin-left: 100px;
-		margin-right: 100px;
+		margin-left: 50px;
+		margin-right: 50px;
+		font-size: 44px;
 	}
 	.menu-list > li {
-		margin-bottom: 30px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid #F7FCFC;
 	}
 	.menu-list > li:last-child {
 		margin-bottom: 0;
+		border-bottom: none;
 	}
 }
 /* ___________ */
@@ -226,7 +234,7 @@
 @media (max-width: 600px) {
 	.start_page h1 { font-size: 68px; }
 	#horizon { height: 90%; }
-	img#horizon + label { bottom: 3%; }
+	img#horizon + label { bottom: -2%; font-size: 18px; }
 	.start_page__button button { font-size: 18px; }
 	section > h1 { font-size: 24px; }
 	.news__all-news h1 { font-size: 24px; }
