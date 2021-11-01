@@ -3,8 +3,8 @@ $(document).ready(function() {
 		adaptiveHeight:true,
 		dots:false,
 
-		slidesToShow:3,
-		slidesToScroll:3,
+		slidesToShow:2,
+		slidesToScroll:2,
 		initialSlide:0,
 		speed:1000,
 		infinite:false,
@@ -140,7 +140,7 @@ function bodyLock() {
 	}
 	body.style.paddingRight = lockPaddingValue;
 	body.classList.add('lock');
-	
+
 	unlock = false;
 	setTimeout(function() {
 		unlock = true;
@@ -196,3 +196,13 @@ document.addEventListener('keydown', function(e) {
 			Element.prototype.msMathesSelector;
 	}
 })();
+
+
+function choseService() {
+	const topLeft = document.querySelectorAll('.topLeft_corner');
+	document.querySelector('.choise_selection').style.background = document.querySelector('.choise_selection').dataset.color;
+	document.querySelector('.choise_selection').style.color = 'white';
+	for (let index = 0; index < 2; index++) {
+		topLeft[index].style.display = 'block';
+	}
+}

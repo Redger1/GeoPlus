@@ -10,7 +10,7 @@ section {
 }
 .services {
 	/*min-width: 29%;*/
-	min-height: 23%;
+	min-height: 420px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;

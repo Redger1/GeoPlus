@@ -109,7 +109,7 @@
 		<section>
 			<div class="news__all-news">
 				<h1 id="news__header">Новости и акции</h1>
-				<a href="#">смотреть все</a>
+				<a href="news.html">смотреть все</a>
 			</div>
 			<div class="news__grid">
 				<div class="main_news">
@@ -141,7 +141,7 @@
 			<h1>Получите профессиональную консультацию</h1>
 			<h2><span id="services_amount">01/04</span>услуга которая вас интересует</h2>
 			<div class="consultation__services">
-				<div class="choise_selection">
+				<div data-color="#32533D" onclick="choseService()" class="choise_selection">
 					<div class="choise_selection__image">
 						<img src="" alt="">
 					</div>
@@ -150,7 +150,7 @@
 					<img class="topLeft_corner" src="assets/Rectangle_344_green.svg" height="25" width="25" alt="">
 				</div>
 
-				<div class="choise_selection">
+				<div data-color="#32533D" onclick="choseService()" class="choise_selection">
 					<div class="choise_selection__image">
 						<img src="" alt="">
 					</div>
@@ -262,7 +262,10 @@
 	<div class="popup" id="popup">
 		<div class="popup__body">
 			<div class="popup__content">
-				<a href="#" class="popup__close close-popup">X</a>
+				<a href="#" class="popup__close close-popup">
+					<img src="assets/cross_1.svg">
+					<img src="assets/cross_2.svg">
+				</a>
 				<div class="popup__title">Оставьте заявку</div>
 				<div class="popup__subtitle">И мы свяжемся с вами в ближайшее время</div>
 				<div class="popup__forms">
